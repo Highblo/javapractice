@@ -44,5 +44,13 @@ public class First {
         System.out.println(multiArray[0][0]);
         System.out.println(multiArray[0][1]);
         System.out.println(multiArray[0][2]);
+
+        //javaコマンド実行時にargsにデータを渡せる
+        System.out.println(args[0]);
+        System.out.println(args[1]);
+        System.out.println(args[2]);
+        System.out.println(args[3]);
+        System.out.println(args[4]);
+        System.out.println(args.length);
     }
 }
