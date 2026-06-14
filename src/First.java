@@ -33,5 +33,16 @@ public class First {
         System.out.println(arrayName[1] + "さん：" + score[1] + "点");
         System.out.println(arrayName[2] + "さん：" + score[2] + "点");
         System.out.println("受験者数：" + score.length + "名");
+
+        //多次元配列
+        int[][] allScore = new int[2][3];
+
+        int[][] multiArray = { {10,20,30}, {40,50,60} };
+
+        System.out.println(allScore.length);
+        System.out.println(allScore[0].length);
+        System.out.println(multiArray[0][0]);
+        System.out.println(multiArray[0][1]);
+        System.out.println(multiArray[0][2]);
     }
 }
