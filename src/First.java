@@ -71,6 +71,15 @@ public class First {
 
         //論理演算子
         System.out.println("(a >= 0) && (b >= 0) = " + ((a >= 0) && (b >= 0)));
+
+        //型変換
+        int price = Integer.parseInt(args[0]);
+        double tax = 0.08;
+        int amount;
+
+        //キャスト　小⇒大は自動で変換されるが、大⇒小は明示的にキャストする必要がある
+        amount = (int)(price * (1 + tax));
+        System.out.println("税込価格：" + amount + "円");
     }
 
 }
