@@ -46,60 +46,60 @@ public class First {
         System.out.println(multiArray[0][2]);
 
         // javaコマンド実行時にargsにデータを渡せる
-        System.out.println(args[0]);
-        System.out.println(args[1]);
-        // System.out.println(args[2]);
-        // System.out.println(args[3]);
-        // System.out.println(args[4]);
-        // System.out.println(args.length);
+        // System.out.println(args[0]);
+        // System.out.println(args[1]);
+        // // System.out.println(args[2]);
+        // // System.out.println(args[3]);
+        // // System.out.println(args[4]);
+        // // System.out.println(args.length);
 
-        // 演算子
-        // 文字列を数値に変換
-        int a = Integer.parseInt(args[0]);
-        int b = Integer.parseInt(args[1]);
+        // // 演算子
+        // // 文字列を数値に変換
+        // int a = Integer.parseInt(args[0]);
+        // int b = Integer.parseInt(args[1]);
 
-        // 算術演算子
-        System.out.println("a = " + a + ", b = " + b);
-        System.out.println("a + b = " + (a + b));
-        System.out.println("a - b = " + (a - b));
-        System.out.println("a * b = " + (a * b));
-        System.out.println("a / b = " + (a / b)); // 割り切れない場合は切り捨て
-        System.out.println("a % b = " + (a % b));
+        // // 算術演算子
+        // System.out.println("a = " + a + ", b = " + b);
+        // System.out.println("a + b = " + (a + b));
+        // System.out.println("a - b = " + (a - b));
+        // System.out.println("a * b = " + (a * b));
+        // System.out.println("a / b = " + (a / b)); // 割り切れない場合は切り捨て
+        // System.out.println("a % b = " + (a % b));
 
-        // 関係演算子
-        System.out.println("a >= 0 : " + (a >= 0));
+        // // 関係演算子
+        // System.out.println("a >= 0 : " + (a >= 0));
 
-        // 論理演算子
-        System.out.println("(a >= 0) && (b >= 0) = " + ((a >= 0) && (b >= 0)));
+        // // 論理演算子
+        // System.out.println("(a >= 0) && (b >= 0) = " + ((a >= 0) && (b >= 0)));
 
         // 型変換
-        int price = Integer.parseInt(args[0]);
-        double tax = 0.08;
-        int amount;
+        // int price = Integer.parseInt(args[0]);
+        // double tax = 0.08;
+        // int amount;
 
-        // キャスト 小⇒大は自動で変換されるが、大⇒小は明示的にキャストする必要がある
-        amount = (int) (price * (1 + tax));
-        System.out.println("税込価格：" + amount + "円");
+        // // キャスト 小⇒大は自動で変換されるが、大⇒小は明示的にキャストする必要がある
+        // amount = (int) (price * (1 + tax));
+        // System.out.println("税込価格：" + amount + "円");
 
-        // if文
-        if (amount >= 2000) {
-            System.out.println("高いですね");
-        } else {
-            System.out.println("安いですね");
-        }
+        // // if文
+        // if (amount >= 2000) {
+        //     System.out.println("高いですね");
+        // } else {
+        //     System.out.println("安いですね");
+        // }
 
-        // else if文
-        int discount;
-        if (price >= 2000) {
-            discount = 300;
-        } else if (price >= 1000) {
-            discount = 200;
-        } else {
-            discount = 100;
-        }
+        // // else if文
+        // int discount;
+        // if (price >= 2000) {
+        //     discount = 300;
+        // } else if (price >= 1000) {
+        //     discount = 200;
+        // } else {
+        //     discount = 100;
+        // }
 
-        amount -= discount;
-        System.out.println("割引後の価格：" + amount + "円");
+        // amount -= discount;
+        // System.out.println("割引後の価格：" + amount + "円");
 
         // switch文
         int num = 0;
@@ -113,6 +113,19 @@ public class First {
                 break;
             default:
                 System.out.println("1または2が選択されませんでした");
+        }
+
+        // while文
+        int count = 0;
+
+        while (count < 5) {
+            System.out.println("count = " + count);
+            count++;
+        }
+
+        // for文
+        for (int i = 0; i < 5; i++) {
+            System.out.println("i = " + i);
         }
     }
 
