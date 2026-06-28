@@ -83,19 +83,19 @@ public class First {
 
         // // if文
         // if (amount >= 2000) {
-        //     System.out.println("高いですね");
+        // System.out.println("高いですね");
         // } else {
-        //     System.out.println("安いですね");
+        // System.out.println("安いですね");
         // }
 
         // // else if文
         // int discount;
         // if (price >= 2000) {
-        //     discount = 300;
+        // discount = 300;
         // } else if (price >= 1000) {
-        //     discount = 200;
+        // discount = 200;
         // } else {
-        //     discount = 100;
+        // discount = 100;
         // }
 
         // amount -= discount;
@@ -127,6 +127,14 @@ public class First {
         for (int i = 0; i < 5; i++) {
             System.out.println("i = " + i);
         }
+
+        // インスタンス化
+        Student stu1 = new Student();
+        stu1.name = "田中";
+        stu1.setScore(90, 80);
+
+        stu1.display();
+        System.out.println("平均：" + stu1.getAvg() + "点");
     }
 
 }
