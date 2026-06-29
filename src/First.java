@@ -140,9 +140,26 @@ public class First {
         Student2 stu2 = new Student2();
         stu2.setData("佐藤");
         stu2.display();
-        
+
         stu2.setData("鈴木", 60, 60 );
         stu2.display();
+
+        // コンストラクタの呼び出し
+        Student3 stu3 = new Student3("小林");
+        stu3.display();
+
+        Student3 stu4 = new Student3("大林", 50, 50);
+        stu4.display();
+
+        // staticメソッドはインスタンス化しなくても呼び出せる
+        Student4.display();
+
+        Student4 stu5 = new Student4("大森");
+        Student4.display();
+
+        Student4 stu6 = new Student4("小森");
+        Student4.display();
+
     }
 
 }
