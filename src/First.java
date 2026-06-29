@@ -135,6 +135,14 @@ public class First {
 
         stu1.display();
         System.out.println("平均：" + stu1.getAvg() + "点");
+
+        // インスタンス化
+        Student2 stu2 = new Student2();
+        stu2.setData("佐藤");
+        stu2.display();
+        
+        stu2.setData("鈴木", 60, 60 );
+        stu2.display();
     }
 
 }
