@@ -170,6 +170,18 @@ public class First {
         // stu8.score = -50;
         stu8.display();
 
+        Student6 stu9 = new Student6();
+
+        // スーパークラスのメソッドを呼び出す
+        stu9.setName("小川");
+        // オーバーライドされたメソッドを呼び出す
+        stu9.display();
+
+        // サブクラスのメソッドを呼び出す
+        stu9.setStuNo(123456);
+        stu9.displayStuNo();
+
+
     }
 
 }
