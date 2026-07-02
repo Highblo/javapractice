@@ -160,6 +160,16 @@ public class First {
         Student4 stu6 = new Student4("小森");
         Student4.display();
 
+        Student5 stu7 = new Student5("菅原");
+        stu7.setScore(80);
+        stu7.display();
+        
+        Student5 stu8 = new Student5("村山");
+        stu8.setScore(-50);
+        // ↓アクセス修飾子をつけないと、直接アクセスできてしまう
+        // stu8.score = -50;
+        stu8.display();
+
     }
 
 }
