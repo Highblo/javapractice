@@ -184,7 +184,24 @@ public class First {
         Student7 stu10 = new Student7("林");
         stu10.display();
 
+        // final修飾子をクラス名につけると、継承できなくなる
+        // final修飾子をメソッドにつけると、オーバーライドできなくなる
+        // final修飾子を変数につけると、値を変更できなくなる
 
+        // TandF taf = new TandF("陸上競技部");
+        // Football fb = new Football("サッカー部");
+
+        // Club型の変数に、TandFクラスやFootballクラスのオブジェクトを代入できる。これを多態性と呼ぶ。
+        Club taf = new TandF("陸上競技部");
+        Club fb = new Football("サッカー部");
+
+        Student8 stu11 = new Student8("高橋", taf);
+        stu11.display();
+        stu11.practice();
+
+        Student8 stu12 = new Student8("桜井", fb);
+        stu12.display();
+        stu12.practice();
     }
 
 }
