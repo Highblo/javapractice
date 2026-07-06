@@ -181,6 +181,9 @@ public class First {
         stu9.setStuNo(123456);
         stu9.displayStuNo();
 
+        Student7 stu10 = new Student7("林");
+        stu10.display();
+
 
     }
 

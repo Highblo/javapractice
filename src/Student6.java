@@ -10,6 +10,7 @@ public class Student6 extends Person {
         System.out.println("学籍番号：" + stuNo);
     }
     
+    // オーバーライド
     public void display() {
         System.out.println("学籍番号：" + stuNo);
         System.out.println("名前：" + getName());
