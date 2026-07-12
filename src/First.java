@@ -202,6 +202,12 @@ public class First {
         Student8 stu12 = new Student8("桜井", fb);
         stu12.display();
         stu12.practice();
+
+        Student9 stu13 = new Student9("Mike");
+        stu13.displayEng();
+
+        Baseball bb = new Baseball();
+        bb.displayEng();
     }
 
 }
