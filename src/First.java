@@ -1,3 +1,6 @@
+// パッケージ化したものをインポート
+import pack.Student10;
+
 public class First {
     public static void main(String[] args) {
         // Hello Worldの出力
@@ -208,6 +211,9 @@ public class First {
 
         Baseball bb = new Baseball();
         bb.displayEng();
+
+        Student10 stu14 = new Student10("John");
+        stu14.display();
     }
 
 }
