@@ -1,5 +1,6 @@
 // パッケージ化したものをインポート
 import pack.Student10;
+import mypack.*;
 
 public class First {
     public static void main(String[] args) {
@@ -214,6 +215,22 @@ public class First {
 
         Student10 stu14 = new Student10("John");
         stu14.display();
+
+        // Vehicle型の配列を作成し、Taxi、Train、Busのオブジェクトを格納する
+        Vehicle[] v = new Vehicle[3];
+        v[0] = new Taxi(4);
+        v[1] = new Train(100);
+        v[2] = new Bus(50);
+
+        for (int i = 0; i < v.length; i++) {
+            v[i].showCrewNum();
+            // Stopableインターフェースを実装しているかどうかを確認する
+            if(v[i] instanceof Stopable) {
+                Stopable s = (Stopable) v[i];
+                s.stop();
+            }
+        }
+
     }
 
 }
