@@ -1,6 +1,7 @@
 // パッケージ化したものをインポート
 import pack.Student10;
 import mypack.*;
+import java.util.ArrayList;
 
 public class First {
     public static void main(String[] args) {
@@ -243,9 +244,20 @@ public class First {
         System.out.println("s1 == s2 : " + (s1 == s2));
         System.out.println("s1 == s3 : " + (s1 == s3));
 
+        // 文字数を取得するlengthメソッド、文字列の一部を取得するsubstringメソッド
         System.out.println("s1.length() : " + s1.length());
         System.out.println("s1.substring(1) : " + s1.substring(1));
         System.out.println("s1.substring(1,3) : " + s1.substring(1,3));
+
+        // ArrayListは複数のオブジェクトをまとめて管理することができる。配列と違い、要素数を動的に変更できる。
+        ArrayList<String> lists = new ArrayList<String>();
+        lists.add("あいうえお");
+        lists.add("かきくけこ");
+        lists.add("さしすせそ");
+
+        for (int i = 0; i < lists.size(); i++) {
+            System.out.println(lists.get(i));
+        }
 
     }
 
