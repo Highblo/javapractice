@@ -216,7 +216,8 @@ public class First {
         Student10 stu14 = new Student10("John");
         stu14.display();
 
-        // Vehicle型の配列を作成し、Taxi、Train、Busのオブジェクトを格納する
+        // Vehicle型の配列を作成し、サブクラスのTaxi、Train、Busのオブジェクトを格納する
+        // Vehicle型の配列を作成することで、サブクラスのオブジェクトをまとめて扱うことができる
         Vehicle[] v = new Vehicle[3];
         v[0] = new Taxi(4);
         v[1] = new Train(100);
@@ -230,6 +231,21 @@ public class First {
                 s.stop();
             }
         }
+
+        String s1 = "Java";
+        String s2 = new String("Java");
+        String s3 = "Java";
+
+        // equalsメソッドは、文字列の内容が同じかどうかを比較する
+        System.out.println("s1.equals(s2) : " + s1.equals(s2));
+        System.out.println("s1.equals(s3) : " + s1.equals(s3));
+        // ==演算子は、参照先が同じかどうかを比較する
+        System.out.println("s1 == s2 : " + (s1 == s2));
+        System.out.println("s1 == s3 : " + (s1 == s3));
+
+        System.out.println("s1.length() : " + s1.length());
+        System.out.println("s1.substring(1) : " + s1.substring(1));
+        System.out.println("s1.substring(1,3) : " + s1.substring(1,3));
 
     }
 
